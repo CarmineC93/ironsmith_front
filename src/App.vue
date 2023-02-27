@@ -17,8 +17,7 @@ components: {
 </script>
 
 <template>
-
-ciao
+<AppHeader />
 
 </template>
 
