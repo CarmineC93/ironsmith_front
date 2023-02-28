@@ -9,24 +9,25 @@ export default{
 </script>
 
 <template>
-
-
-
  
 <header>
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">
+            <img src="../assets/pngwing.com.png" alt="" style="max-width: 100px;">
+          </a>
 
-<div class="menu-btn navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" 
+          <div class="menu-btn navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" 
            data-bs-target="#navbarNav"
            aria-controls="navbarNav"
            aria-expanded="false" 
-           aria-label="Toggle navigation"
-           >
+           aria-label="Toggle navigation">
+           
+            
             <div class="menu-btn__burger toggler-icon"> </div>
-</div>
+
+          </div>
 
           <div class="collapse navbar-collapse " id="navbarNav">
             <ul class="navbar-nav">
@@ -53,19 +54,12 @@ export default{
 <style lang="scss" scoped>
 
 
-*{
-  margin: 0;
-  padding:0;
-  box-sizing: border-box;
-}
+// *{
+//   margin: 0;
+//   padding:0;
+//   box-sizing: border-box;
+// }
 
-header{
-  // background: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // min-height: 100vh;
-}
 
 .menu-btn{
   background: black;
@@ -123,5 +117,7 @@ header{
 .menu-btn.open .menu-btn__burger::after{
   transform: rotate(-45deg) translate(35px, 35px);
 } 
-
+.nav-link{
+  font-size: 1.7rem;
+}
 </style>
