@@ -15,7 +15,9 @@ export default{
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="../assets/pngwing.com.png" alt="" style="max-width: 100px;">
+            <img src="../assets/pngwing.com.png" alt="" style="max-width: 80px;">
+            <!-- <img src="../assets/logo-white.png" alt="" style="max-width: 80px;"> -->
+
           </a>
 
           <div class="menu-btn navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" 
@@ -53,17 +55,18 @@ export default{
 
 <style lang="scss" scoped>
 
-
-// *{
-//   margin: 0;
-//   padding:0;
-//   box-sizing: border-box;
-// }
-
+header{
+  padding:0 2rem;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.507);
+}
 
 .menu-btn{
   background: black;
-  position: relative;
+  // position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,12 +115,22 @@ export default{
 
 .menu-btn.open .menu-btn__burger::before{
   transform: rotate(45deg) translate(35px, -35px);
+  border-radius: 100px  10px  10px 0px;
+
 }
 
 .menu-btn.open .menu-btn__burger::after{
   transform: rotate(-45deg) translate(35px, 35px);
+  border-radius: 0 100px 10px 10px;
 } 
 .nav-link{
   font-size: 1.7rem;
+}
+
+.menu-btn.open .menu-btn__burger::after{
+  background: linear-gradient( -263deg, rgba(252,74,74,1) 0%, rgb(199, 200, 200) 100% );
+}
+.menu-btn.open .menu-btn__burger::before{
+    background: linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgb(199, 200, 200) 100% );
 }
 </style>
